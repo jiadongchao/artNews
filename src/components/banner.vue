@@ -1,9 +1,9 @@
 <template>
     <div class="banner">
         <swiper :options="swiperOption" class="swiper-box">
-            <swiper-slide class="swiper-item">Slide 1</swiper-slide>
-            <swiper-slide class="swiper-item">Slide 2</swiper-slide>
-            <swiper-slide class="swiper-item">Slide 3</swiper-slide>
+            <swiper-slide class="swiper-item"><img src="http://img5.artron.net/news/201711/2017111609584613741.jpg"></swiper-slide>
+            <swiper-slide class="swiper-item"><img src="http://img4.artron.net/news/201711/2017112110363932346.jpg"></swiper-slide>
+            <swiper-slide class="swiper-item"><img src="http://img5.artron.net/news/201711/2017111914162744999.jpg"></swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
     </div>
@@ -56,4 +56,5 @@
     -webkit-align-items: center;
     align-items: center;
   }
+  img{width: 100%;}
 </style>

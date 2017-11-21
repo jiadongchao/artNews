@@ -16,7 +16,7 @@ export default {
   name: 'header',
   data () {
     return {
-      title: '猿圈儿·News'
+      title: '虞乐圈儿·News'
     }
   }
 }
