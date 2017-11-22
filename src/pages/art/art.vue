@@ -1,17 +1,17 @@
 <template>
-  <div class="recome">
+  <div class="art">
     <banner></banner>
     <div class="content">
       <ul class="news-list" >
-        <li class="news-item" v-for="item in NewsData">
+        <li class="news-item" v-for="item in arts">
           <div class="new-pic">
-            <a :href='item.columnlink'>
-              <img :src='item.pic'>
+            <a :href='item.detailLink'>
+              <img :src='item.Link'>
             </a>
           </div>
           <div class="new-title">
-            <a :href='item.link'>{{item.title}}</a>
-            <span class="news-time">{{item.time}}</span>
+            <a :href='item.hrefLink'>{{item.Title}}</a>
+            <span class="news-time">{{item.pubtext}}</span>
             <a class="source" :href='item.columnlink'>{{item.columnname}}</a>
           </div>
         </li>
@@ -42,24 +42,24 @@ export default {
   data () {
     return {
       msg: '',
-      NewsUrl:"http://www.easy-mock.com/mock/5a1445d8e1f487793d19bbb5/home/home",
-      NewsData:[]
+      artUrl:"http://www.easy-mock.com/mock/5a1445d8e1f487793d19bbb5/home/art",
+      arts:[]
     }
   },
   mounted(){
-    this.getNews()
+    this.getArt()
   },
   methods:{
-    getNews: function() {
-        this.$http.get(this.NewsUrl)
+    getArt: function() {
+        this.$http.get(this.artUrl)
           .then((response) => {
-            this.NewsData = response.body.data
-            console.log(this.NewsData)
+            this.arts = response.body.data
+            console.log(this.arts)
           })
           .catch(function(response) {
             console.log(response)
           })
-    }  
+    },
   }
 }
 </script>

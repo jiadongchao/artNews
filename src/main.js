@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Resource from 'vue-resource'
+import store from './store'
 
 import './assets/css/reset.css'
 import './assets/js/rem'
@@ -18,6 +19,7 @@ new Vue({
   el: '#app',
   router,
   Resource,
+  store,
   template: '<App/>',
   components: { App }
 })
