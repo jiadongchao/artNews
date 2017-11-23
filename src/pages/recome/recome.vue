@@ -42,7 +42,8 @@ export default {
   data () {
     return {
       msg: '',
-      NewsUrl:"http://www.easy-mock.com/mock/5a1445d8e1f487793d19bbb5/home/home",
+      //NewsUrl:"http://www.easy-mock.com/mock/5a1445d8e1f487793d19bbb5/home/home",
+      NewsUrl:'../../../static/News.json',
       NewsData:[]
     }
   },

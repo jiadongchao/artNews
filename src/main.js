@@ -6,10 +6,10 @@ import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Resource from 'vue-resource'
 import store from './store'
-
 import './assets/css/reset.css'
 import './assets/js/rem'
 require('swiper/dist/css/swiper.css')
+
 Vue.use(VueAwesomeSwiper)
 Vue.use(Resource)
 Vue.config.productionTip = false
@@ -23,3 +23,4 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
