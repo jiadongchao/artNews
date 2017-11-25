@@ -30,6 +30,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.header{ position: relative;z-index: 11;}
 head{height: 2.25rem;display: flex;justify-content:center;    position: fixed;top: 0;width: 16rem;z-index: 10;background: #f5f5f5;}
 .title{font-size: 0.75rem;line-height: 2.25rem;}
 

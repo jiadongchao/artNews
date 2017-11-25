@@ -33,5 +33,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.home{padding-top: 2.2rem;}
+.home{padding-top: 2.2rem;height: 100%;}
 </style>

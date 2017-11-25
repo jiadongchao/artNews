@@ -1,6 +1,7 @@
 <template>
   <div class="art">
-    <banner></banner>
+   
+    <!-- <banner></banner> -->
     <div class="content">
       <ul class="news-list" >
         <li class="news-item" v-for="(item,key) in arts">
